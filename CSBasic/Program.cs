@@ -20,7 +20,9 @@ namespace CSBasic
             //식별자 Identifier
             int alpha;
             int Alpha;
-            
+            //int 😒😊❤; 
+            //int has space;
+
             /// xml 주석 
             //inline comment
 
