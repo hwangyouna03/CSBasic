@@ -28,7 +28,10 @@ namespace CSBasic
 
             /* comment*/
 
+            //출력
             Console.WriteLine("Hello");
+            Console.Write("이건 안개행");
+            Console.Write("입니다.\n");
         }
     }
 }
