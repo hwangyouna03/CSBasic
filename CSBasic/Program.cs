@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSBasic
+{
+    class Program
+    {
+      //var keyword는 지역변수로만 사용 가능
+        static void Main(string[] args)
+        {
+            //keyword
+            //int as;
+
+            //context keyword
+            var name = "황윤아";
+
+            //식별자 Identifier
+            int alpha;
+            int Alpha;
+            
+            /// xml 주석 
+            //inline comment
+
+            /* comment*/
+
+            Console.WriteLine("Hello");
+        }
+    }
+}
