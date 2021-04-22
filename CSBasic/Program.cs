@@ -115,7 +115,33 @@ namespace CSBasic
             Console.WriteLine(3 > i || i > 8);
             Console.WriteLine(i < 3 || 8 < i);
 
+            int a = 2147483640;
+            int b = 100000000;
+            Console.WriteLine((long)a + b);
+            Console.WriteLine(int.MinValue);
+            Console.WriteLine(int.MaxValue);
+            Console.WriteLine(double.MaxValue);
 
+            Console.WriteLine(-int.MaxValue);
+            //Console.WriteLine(-int.MinValue); 오류남
+
+            Console.WriteLine(3L);
+            Console.WriteLine(3L);
+
+            Console.WriteLine(3);
+            Console.WriteLine(3.0);
+
+            char c = 'a';
+            Console.WriteLine(c);
+
+            //sizeof (자료형)
+            Console.WriteLine("int: " + sizeof(int));
+            Console.WriteLine("long: " + sizeof(long));
+            Console.WriteLine("float: " + sizeof(float));
+            Console.WriteLine("double: " + sizeof(double));
+            Console.WriteLine("char: " + sizeof(char));
+
+            bool IsLive = true;
         }
     }
 }
