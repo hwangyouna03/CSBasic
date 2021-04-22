@@ -61,14 +61,61 @@ namespace CSBasic
            Console.WriteLine("미\t림여자정보과학고등학교");
            Console.WriteLine("미림\t여자정보과학고등학교");
            Console.WriteLine("미림여\t자정보과학고등학교");
-            Console.WriteLine("미림여자정\t보과학고등학교");
-            Console.WriteLine("미림여자정보\t과학고등학교");
-            Console.WriteLine("미림여자정보과\t학고등학교");
-            Console.WriteLine("미림여자정보과학\t고등학교");
-            Console.WriteLine("미림여자정보과학고\t등학교");
-            Console.WriteLine("미림여자정보과학고등\t학교");
-            Console.WriteLine("미림여자정보과학고등학\t교");
-            Console.WriteLine("미림여자정보과학고등학교\t");
+           Console.WriteLine("미림여자정\t보과학고등학교");
+           Console.WriteLine("미림여자정보\t과학고등학교");
+           Console.WriteLine("미림여자정보과\t학고등학교");
+           Console.WriteLine("미림여자정보과학\t고등학교");
+           Console.WriteLine("미림여자정보과학고\t등학교");
+           Console.WriteLine("미림여자정보과학고등\t학교");
+           Console.WriteLine("미림여자정보과학고등학\t교");
+           Console.WriteLine("미림여자정보과학고등학교\t");
+
+            //문자열 연결 연산자
+            //concat concatenate operaotr
+            //concatenation operator
+            Console.WriteLine("ABC" + "EFG");
+            Console.WriteLine('A' + 'E'); //->정수로 판단해서 134를 출력한다.
+            Console.WriteLine("ABC" + 'E');
+            Console.WriteLine("ABC"[2]);
+            Console.WriteLine("ABC"[3]);//에러 발생 IndexOoutOfBounce
+
+            //bool
+            bool isPlay = true;
+            bool isDeath = false;
+
+            //comparison operator
+            Console.WriteLine(52 == 163);
+            Console.WriteLine(52 != 163);
+            Console.WriteLine(52 > 163);//gt
+            Console.WriteLine(52 < 163);//lt
+            Console.WriteLine(52 >= 163);
+            Console.WriteLine(52 <= 163);
+            //Console.WriteLine(52 =! 163);
+            //Console.WriteLine(52 => 163);
+            //Console.WriteLine(52 =< 163);
+
+            //Logic operator
+            Console.WriteLine(!(true));
+            Console.WriteLine(true || false);
+            Console.WriteLine(true && false);
+
+            //단항연산자 - unary operator
+            Console.WriteLine(!(true));
+            int i = 0;
+            i++; //연산자에 대응하는 것이 하나여서 단항연산자
+            //이항연산자 - binary operator
+            i = i + 2;
+            //삼항연산자 - ternary operator
+            int j;
+            //  [1] ? [2] : [3] -> 연산자가 3개
+            j = (i > 3) ? 0 : 1;
+
+            //Console.WriteLine(3 <i <8);
+            Console.WriteLine(3 < i && i < 8);
+            Console.WriteLine(3 > i || i > 8);
+            Console.WriteLine(i < 3 || 8 < i);
+
+
         }
     }
 }
