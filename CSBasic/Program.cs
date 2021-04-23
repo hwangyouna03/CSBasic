@@ -15,7 +15,8 @@ namespace CSBasic
             //int as;
 
             //context keyword
-            var name = "황윤아";
+            //var name = "황윤아";
+            //var something = "blahblah"; var는 맴버변수 위치에 사용 X
 
             //식별자 Identifier
             int alpha;
@@ -180,6 +181,12 @@ namespace CSBasic
             Console.WriteLine(_char.GetType());
             Console.WriteLine(_string.GetType());
 
+            var somea = "마음에 드는 문자열";
+            var someb = 42;
+            var somec = 3.141592;
+            Console.WriteLine(somea.GetType());
+            Console.WriteLine(someb.GetType());
+            Console.WriteLine(somec.GetType());
         }
     }
 }
