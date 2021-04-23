@@ -8,7 +8,7 @@ namespace CSBasic
 {
     class Program
     {
-      //var keyword는 지역변수로만 사용 가능
+        //var keyword는 지역변수로만 사용 가능
         static void Main(string[] args)
         {
             //keyword
@@ -57,19 +57,19 @@ namespace CSBasic
             Console.WriteLine('A'); //문자
             //String
             Console.WriteLine("A"); //문자열
-           //Escape Character
-           Console.WriteLine("\t 탭 \\ 역슬래시 \n 개행 \"");
-           Console.WriteLine("미\t림여자정보과학고등학교");
-           Console.WriteLine("미림\t여자정보과학고등학교");
-           Console.WriteLine("미림여\t자정보과학고등학교");
-           Console.WriteLine("미림여자정\t보과학고등학교");
-           Console.WriteLine("미림여자정보\t과학고등학교");
-           Console.WriteLine("미림여자정보과\t학고등학교");
-           Console.WriteLine("미림여자정보과학\t고등학교");
-           Console.WriteLine("미림여자정보과학고\t등학교");
-           Console.WriteLine("미림여자정보과학고등\t학교");
-           Console.WriteLine("미림여자정보과학고등학\t교");
-           Console.WriteLine("미림여자정보과학고등학교\t");
+                                    //Escape Character
+            Console.WriteLine("\t 탭 \\ 역슬래시 \n 개행 \"");
+            Console.WriteLine("미\t림여자정보과학고등학교");
+            Console.WriteLine("미림\t여자정보과학고등학교");
+            Console.WriteLine("미림여\t자정보과학고등학교");
+            Console.WriteLine("미림여자정\t보과학고등학교");
+            Console.WriteLine("미림여자정보\t과학고등학교");
+            Console.WriteLine("미림여자정보과\t학고등학교");
+            Console.WriteLine("미림여자정보과학\t고등학교");
+            Console.WriteLine("미림여자정보과학고\t등학교");
+            Console.WriteLine("미림여자정보과학고등\t학교");
+            Console.WriteLine("미림여자정보과학고등학\t교");
+            Console.WriteLine("미림여자정보과학고등학교\t");
 
             //문자열 연결 연산자
             //concat concatenate operaotr
@@ -187,6 +187,20 @@ namespace CSBasic
             Console.WriteLine(somea.GetType());
             Console.WriteLine(someb.GetType());
             Console.WriteLine(somec.GetType());
+
+
+            bool isLoop = true;
+            string input;
+            while (isLoop)
+            {
+                Console.Write("입력>>");
+                input = Console.ReadLine();
+                if(input.Equals("q"))
+                    break;
+                else
+                    Console.WriteLine(input);
+                
+            }
         }
     }
 }
