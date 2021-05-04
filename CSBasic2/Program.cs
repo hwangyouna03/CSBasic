@@ -56,7 +56,7 @@ namespace CSBasic2
                     Console.WriteLine("시대를 앞서나가는 혁명의 씨앗");
 
 
-            Console.Write("이번 달은 몇 월인가요?");
+            Console.Write("이번 달은 몇 월인가요: ");
             int input = int.Parse(Console.ReadLine());
 
             switch(input)
