@@ -31,7 +31,7 @@ namespace CSBasic2
             }
             else if (3.5 <= score)
             {
-                Console.WriteLine("협업");
+                Console.WriteLine("혁명");
             }
             else if (2.8 <= score)
             {
