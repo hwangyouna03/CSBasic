@@ -26,6 +26,20 @@ namespace CSBasic3
                 Console.Write("입력(종료:exit:");
                 input = Console.ReadLine();
             } while (input != "exit");
+
+            for(int j ='가'; j <='힣'; j++)
+            {
+                Console.Write((char)j);
+            }
+            int[] intArray3 = { 1, 2, 3, 4, 5, 6 };
+            for(int k = intArray.Length -1; k >=0; k--)
+            {
+                Console.WriteLine(intArray[k]);
+            }
+            for (int k = intArray.Length - 1; k > 0; k--)
+            {
+                Console.WriteLine(intArray[k - 1]);
+            }
         }
     }
 }
