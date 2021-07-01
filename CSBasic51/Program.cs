@@ -25,6 +25,10 @@ namespace CSBasic51
             this.name = name;
             this.price = price;
         }
+        ~Product()
+        {
+            Console.WriteLine(this.name + "왈 소멸자 호출");
+        }
     }
     class Sample
     {
