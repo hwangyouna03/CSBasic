@@ -28,6 +28,17 @@ namespace CSBasic51
                     return input;
                 }*/
             }
+           
+            public static double Abs(double input)
+            {
+                return (input < 0) ? -input : input;
+            }
+            public static long Abs(long input)
+            {
+                return (input < 0) ? -input : input;
+            }
+            /*Method Signature 가 같은 경우 오버로딩 불가
+             */
         }
         class Test
         {
@@ -106,6 +117,10 @@ namespace CSBasic51
             Console.WriteLine(p.instanceVariable);
             p.instanceMethod();
 
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-273));
+            Console.WriteLine(MyMath.Abs(52.273));
+            Console.WriteLine(MyMath.Abs(214712340385872)); //마우스 오버해서 타입 확인하기
 
         }
     }
