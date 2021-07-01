@@ -8,6 +8,19 @@ namespace CSBasic51
 {
     class Program
     {
+        class Test
+        {
+            //Method Signature : 메소드 구분할 때 쓴다.
+            public int Sum(int min, int max)
+            {
+                int output = 0;
+                for(int i = min; i <=max; i++)
+                {
+                    output += i;
+                }
+                return output;
+            }
+        }
         class MethodExample
         {
             public int Power(int x)
@@ -57,6 +70,9 @@ namespace CSBasic51
             Console.WriteLine(me.Power(20));
             Console.WriteLine(me.Multi(52, 273));
             Console.WriteLine(me.Multi(103, 32));
+
+            Test test = new Test();
+            Console.WriteLine(test.Sum(1, 100)); //1부터 100까지 합
         }
     }
 }
