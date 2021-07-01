@@ -8,6 +8,7 @@ namespace CSBasic51
 {
     class Program
     {
+        int someModifier = 0;
         public int instanceVariable = 10;
         public int instanceMethod()
         {
@@ -42,6 +43,10 @@ namespace CSBasic51
         }
         class Test
         {
+            public void TestMethod()
+            {
+                Program.Main(new string[] { "" });
+            }
             //Method Signature : 메소드 구분할 때 쓴다.
             public int Sum(int min, int max)
             {
