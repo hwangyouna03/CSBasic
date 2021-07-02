@@ -234,6 +234,8 @@ namespace CSBasic51
             t.value = 30;
             TestSome.Change(t);
             Console.WriteLine(t.value);
+            Console.WriteLine(Fibonacci.Get(10));
+
         }
         static void Change(int input)
         {
@@ -246,6 +248,27 @@ namespace CSBasic51
         public static void Change(TestSome input)
         {
             input.value = 20;
+        }
+    }
+    class Fibonacci
+    {
+        private static Dictionary<int, long> memo = new Dictionary<int, long>();
+        public static int count = 0;
+        public static long Get(int i)
+        {
+            count++;
+            Console.WriteLine(count);
+            if(i < 0) { return 0; }
+            if(i == 1) { return 1; }
+            if(memo.ContainsKey(i))
+            {
+                return memo[i];
+            }
+            else
+            {
+                memo[i] = Get(i - 2) + Get(i - 1);
+                return memo[i];
+            }
         }
     }
 }
