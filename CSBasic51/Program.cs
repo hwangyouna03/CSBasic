@@ -6,6 +6,52 @@ using System.Threading.Tasks;
 
 namespace CSBasic51
 {
+    class Box
+    {
+        private int width;
+        private int height;
+
+        public int Width
+        {
+            get { return width; }
+            set { 
+                    if(value > 0)
+                    {
+                        width = value;
+                    }
+                    else
+                    {
+                        Console.WriteLine("양수만 입력 가능!");
+                    }
+                 }
+        }
+        public int Height
+        {
+            get { return height; }
+            set {
+                    if (value > 0)
+                    {
+                        height = value;
+                    }
+                    else
+                    {
+                        Console.WriteLine("양수만 입력 가능!");
+                    }
+            }
+        }
+        
+        public int Area
+        {
+            get { return this.width * this.Height; }
+        }
+        public Box(int width, int height)
+        {
+            this.width = width;
+            this.height = height;
+            
+        }
+        
+    }
     class Product
     {
         public static int counter = 0;
@@ -174,6 +220,11 @@ namespace CSBasic51
             Console.WriteLine("두 번째 위치");
             Sample sample = new Sample();
             Console.WriteLine("세 번째 위치");
+
+            Box box = new Box(10, 200);
+            Console.WriteLine(box.Area);
+            Box wrongBox = new Box(-10, -5);
+            Console.WriteLine(wrongBox.Area);
 
         }
     }
